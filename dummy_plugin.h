@@ -18,6 +18,9 @@ extern "C" {
 
 typedef struct {
   GstBaseTransform parent;
+  GstElement *cairo;
+
+  GstPad *sinkpad, *srcpad;
 } Dummy;
 
 typedef struct {

@@ -32,7 +32,7 @@ file(GLOB DUMMY_HEADERS *.h)
   ${DUMMY_HEADERS})
 
 
-target_link_libraries(dummy ${CMAKE_DL_LIBS} Threads::Threads rt ${GSTREAMER_LIBRARIES})
+target_link_libraries(dummy ${CMAKE_DL_LIBS} Threads::Threads rt ${GSTREAMER_LIBRARIES} cairo)
 
 target_include_directories(dummy PRIVATE ${GSTREAMER_INCLUDE_DIRS})
 
